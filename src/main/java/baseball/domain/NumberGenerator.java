@@ -10,10 +10,15 @@ public class NumberGenerator {
     // 만약 존재하지 않는 숫자라면 담는다.
     public List<Integer> createRandomNumbers() {
         List<Integer> numbers = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
+
+        while (numbers.size() < 3) {
             int number = new Random().nextInt(9) + 1;
-            numbers.add(number);
+            if (!numbers.contains(number)) {
+                numbers.add(number);
+            }
         }
+
+
         return null;
     }
 
