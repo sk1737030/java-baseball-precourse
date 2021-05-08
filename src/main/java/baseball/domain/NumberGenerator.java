@@ -18,8 +18,7 @@ public class NumberGenerator {
             }
         }
 
-
-        return null;
+        return numbers;
     }
 
 }
